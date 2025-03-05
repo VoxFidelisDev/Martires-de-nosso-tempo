@@ -1,0 +1,109 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F8F9FA; /* Fundo branco suave */
+    color: #1E3A8A; /* Azul Mariano para os textos */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1E3A8A; /* Azul Mariano */
+    color: #F8F9FA; /* Branco para contraste */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px #6C757D; /* Sombra cinza suave */
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #F8F9FA;
+}
+
+header blockquote {
+    margin-top: 10px;
+    font-style: italic;
+    color: #F8F9FA;
+}
+
+/* Seção de Bem-vindo */
+#bem-vindo {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #1E3A8A;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#bem-vindo h2 {
+    color: #8B0000; /* Vermelho Profundo para os títulos */
+    margin-bottom: 15px;
+}
+
+#bem-vindo p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #1E3A8A;
+}
+
+#bem-vindo a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: #1E3A8A;
+    background-color: #fff;
+    border: 2px solid #1E3A8A;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#bem-vindo a:hover {
+    background-color: #1E3A8A; /* Fundo azul ao passar o mouse */
+    color: #F8F9FA; /* Texto branco ao passar o mouse */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para Footer */
+footer {
+    background-color: #1E3A8A; /* Azul Mariano */
+    color: #F8F9FA; /* Branco */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Animação para links */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#bem-vindo a {
+    animation: aparecer 0.5s ease-out;
+}
