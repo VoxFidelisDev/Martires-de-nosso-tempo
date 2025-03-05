@@ -1,0 +1,137 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e estrutura */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;  /* Fundo mais suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #660000;  /* vermelho sangue para mostrar o sacrifício e a união na paixão de Cristo */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #DAA520;  /* Branco suave */
+}
+
+header p {
+    font-size: 1.4em;
+    color: #ffffff;  /* Branco */
+}
+
+/* Estilo para citações */
+blockquote {
+    text-align: right;  /* Alinha a citação à esquerda */
+    font-style: italic;  /* Deixa a citação em itálico */
+    margin: 20px 0;
+    padding: 10px 20px;
+    padding-right: 320px;
+    border-left: 5px solid #fafafa;  /* Linha para destacar */
+    background-color: #660000;  /* Fundo do bloco */
+    color: #fafafa;  /* Cor do texto */
+}
+
+/* Alinhar o nome do autor à direita, mas com um pequeno espaçamento */
+blockquote footer {
+    text-align: right;  /* Alinha o nome do autor à direita */
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fafafa;  /* Cor suave para o nome */
+    margin-top: 10px;  /* Distância entre a citação e o nome do autor */
+    padding-right: 40px;  /* Espaçamento maior à direita */
+}
+
+
+/* Navegação */
+nav {
+    background-color: #34495e;  /* Azul mais suave */
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ecf0f1;
+    border-bottom: 2px solid #ecf0f1;  /* Linha de destaque ao passar o mouse */
+}
+
+/* Seções principais */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;  /* Fundo branco */
+    border-radius: 8px;  /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #2980b9;  /* Azul claro para os títulos */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #7f8c8d;  /* Cinza médio */
+}
+
+/* Rodapé */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid #ecf0f1;  /* Linha superior no rodapé */
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Melhora a aparência dos links em dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
