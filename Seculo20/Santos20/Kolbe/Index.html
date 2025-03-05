@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Maximiliano Kolbe - Mártires de Nosso Tempo</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        .accordion {
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .accordion-header {
+            background-color: #f0f0f0;
+            cursor: pointer;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .accordion-header:hover {
+            background-color: #e0e0e0;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            padding: 0 15px;
+            background-color: #fafafa;
+        }
+
+        .accordion-content p, .accordion-content ul {
+            margin: 10px 0;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px; /* Ajuste conforme necessário */
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container" style="text-align: center;">
+            <h1>São Maximiliano Kolbe</h1>
+            <h3>Mártir do Século 20</h3>
+            <p>Mártir da caridade, ofereceu sua vida em troca de um prisioneiro em Auschwitz.</p>
+            <div style="width: 240px; height: 240px;  display: flex; justify-content: center; align-items: center; border-radius: 20px; margin: 0 auto;">
+                <img src="https://dominnus.wordpress.com/wp-content/uploads/2012/08/kolbe.jpg" alt="São Maximiliano Kolbe" style="width: 200%; height: 100%; object-fit: contain; border-radius: 5px;">
+            </div>
+        </div>
+    </header>
+<main>
+    <div class="accordion">
+        <!-- Seção 1: Vida e Martírio -->
+        <div class="accordion-item">
+            <div class="accordion-header">Vida e Martírio</div>
+            <div class="accordion-content">
+                <p>São Maximiliano Kolbe nasceu na Polônia, em 1894. Foi sacerdote franciscano e fundou a Milícia da Imaculada, dedicando-se à evangelização através dos meios de comunicação. Durante a Segunda Guerra Mundial, foi preso pelos nazistas e levado para Auschwitz, onde ofereceu sua vida voluntariamente para salvar um prisioneiro condenado. Morreu em 14 de agosto de 1941, após receber uma injeção letal.</p>
+            </div>
+        </div>
+
+        <!-- Seção 2: Frases Marcantes -->
+        <div class="accordion-item">
+            <div class="accordion-header">Frases Marcantes</div>
+            <div class="accordion-content">
+                <ul>
+                    <li>"Somente o amor cria."</li>
+                    <li>"Não tenha medo de amar a Imaculada. Ela te conduzirá a Jesus."</li>
+                    <li>"Para além de tudo, quero ser um santo."</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Seção 3: Milagres Reconhecidos -->
+        <div class="accordion-item">
+            <div class="accordion-header">Milagres Reconhecidos</div>
+            <div class="accordion-content">
+                <p>Entre os milagres atribuídos a sua intercessão, destaca-se a cura milagrosa de um jovem polonês, que levou à sua canonização em 1982 por São João Paulo II.</p>
+            </div>
+        </div>
+
+        <!-- Seção 4: Curiosidades -->
+        <div class="accordion-item">
+            <div class="accordion-header">Curiosidades</div>
+            <div class="accordion-content">
+                <ul>
+                    <li>Fundou a revista "Cavaleiro da Imaculada", com milhões de exemplares distribuídos.</li>
+                    <li>Construiu uma cidade mariana, Niepokalanów, na Polônia, para promover a devoção à Virgem Maria.</li>
+                    <li>É considerado o patrono dos jornalistas e das famílias.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Conclusão: Frase de impacto ou oração -->
+        <div class="accordion-item">
+            <div class="accordion-header">Conclusão</div>
+            <div class="accordion-content">
+                <p>"Ó São Maximiliano Kolbe, mártir da caridade, intercede por nós junto a Deus, para que possamos viver e morrer por amor como tu viveste. Amém."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link para retornar à lista de mártires -->
+    <p style="text-align: center;"><a href="../seculo20.html">Voltar para a lista de mártires do século 20</a></p>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Mártires de Nosso Tempo - Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    // JavaScript para o efeito de acordeão
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
